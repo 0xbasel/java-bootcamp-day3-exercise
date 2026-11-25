@@ -37,10 +37,9 @@ public class Main {
         }
 
         // 3. Write a Java program that generates an integer between 1 and 7 and displays the name of the weekday.
-        System.out.print("Please enter a day number (from 1 to 7): ");
-        int dayNum = in.nextInt();
+        int randomDay = (int) (Math.random() * 7) + 1;
 
-        switch (dayNum) {
+        switch (randomDay) {
             case 1:
                 System.out.println("Sunday");
                 break;
